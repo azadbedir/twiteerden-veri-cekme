@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Sentiment Analizi</title>
+</head>
+<body>
+    //axsios kütüphanesi Bu, Twitter API’den tweet almak için kullanılıyor
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <canvas id="sentimentChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+// grafik çizme kodum
+<script>
+    const ctx = document.getElementById('sentimentChart').getContext('2d');
+    const chart = new Chart(ctx, {
+        type: 'pie',// Grafik türü "pasta (pie)" olarak ayarla
+        data: {
+            labels: ['Pozitif', 'Negatif', 'Nötr'],
+            datasets: [{data: [60, 30, 10], 
+                backgroundColor: ['green', 'red', 'gray']
+            }]
+        }
+    });
+</script>
+   
+    <script src="script.js"></script>
+</body>
+</html> 
