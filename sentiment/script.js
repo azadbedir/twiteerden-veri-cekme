@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config(); // .env dosyasını yükle
 
-const BEARER_TOKEN = process.env.BEARER_TOKEN; // API anahtarını oku
+const BEARER_TOKEN = process.env.AAAAAAAAAAAAAAAAAAAAALaXzgEAAAAAu%2FTMb4MmBE2Hsv4jMAtuIPh6XvU%3D2n8WEKEokud7H03n06GxD0TstT12kGVjMHNUvZY3mdb7D45aL1; // API anahtarını oku
 
 // Tweeter Apı den Tweetleri çeken fonksiyon
 async function getTweets(query) {
